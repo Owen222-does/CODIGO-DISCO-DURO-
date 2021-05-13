@@ -1,0 +1,33 @@
+Import sys, os
+
+Def searchingfiles():
+    documento =input("introduzca el nombre del documento con su extension (.txt , si es de texto,
+    directorio ="C:/Users/Jose/Desktop/"
+    total= =0
+    listafiles=  []
+    ficheros=    []
+    nlistafiles= []
+    if (len(sys.argv) >1):
+ if (not os.path.isdir(sys.argv[1])):
+ print(sys.argv[1], "no se reconoce como directorio")
+directorio=sys.argv[1]
+for root,dir,ficheros in fichero.lower()):
+   listafiles.append(root + "\" + fichero)
+   total+=1
+print("En total hay, total, "archivos con", documento)
+print("LISTA FICHEROS:", listafiles)
+  for index, item in enumerate(listafiles):
+item.replace("\", "/")
+indxbackslash =item.index("\\")
+indx =item[0:indxbackslash]
+rootfilecorrect=indx +"/" ´+ documento
+nlistafiles.append(rootfilecorrect)
+print("{o} :{1}\n".format(index,rootfilecorrect))
+  listapos1= []
+  for n in range (len(nlistafiles)):
+  listapos1.append(n)
+   dictfiles= dict(zip(list(range(len(listapos1))), nlistafiles))
+  slecter =int(input("Seleccione el archivo por el numero de la izquierda: "))
+  f= dictifiles.get(selecter)
+  print("Documento seleccionado",f)
+  os.starfile(f)
